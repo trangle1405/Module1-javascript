@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doitien</title>
+</head>
+<body>
+<form>
+    Amount: <br><input id="inputTien" type="number" value='0' name="sotien"><br><br>
+
+ From currency <br>
+<select id="fromCurrency">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+<br>
+<br>
+To currency <br>
+<select id="toCurrency">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+<br>
+<br>
+<button onclick="chuyentien()" type="button">Convert!</button>
+</form>
+<script>
+    function chuyentien() {
+        var soTien = document.getElementById("inputTien").value
+        var fromCurrency = document.getElementById("fromCurrency").value
+        var toCurrency = document.getElementById("toCurrency").value
+        var outputMoney=soTien;
+        if(fromCurrency!==toCurrency){
+            if(fromCurrency==='VND'){
+                outputMoney = soTien / 23000
+                // console.log(outputMoney)
+
+
+            }
+        else  {
+                outputMoney = soTien * 23000
+                // console.log(outputMoney)
+
+
+            }
+
+        }
+        document.getElementById("result").innerHTML = outputMoney
+    }
+</script>
+<p>so tien chuyen doi</p>
+<p id="result">chua chuyen doi</p>
+</body>
+</html>
