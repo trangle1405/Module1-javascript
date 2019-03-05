@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if_esle_if</title>
+</head>
+<body>
+<script>
+   let nhapTen = prompt('nhap vao ten nguoi dung');
+    if(nhapTen == 'admin'){
+        let nhapMatKhau = prompt('nhap mat khau');
+        if (nhapMatKhau == 'TheMaster'){
+            alert('Welcome!');
+        } else {
+            if(nhapMatKhau !=='TheMaster'){
+                alert('Wrong password');
+            }
+            }
+    } else {
+        alert("i don't know you");
+    }
+</script>
+</body>
+</html>

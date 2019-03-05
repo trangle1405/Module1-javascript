@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>good fact cheap</title>
+</head>
+<body>
+<form>
+    San pham:<br/>
+    <label><input id="check1" type="checkbox"/> Tot</label> <br/>
+    <label><input id="check2" type="checkbox"/> Nhanh</label> <br/>
+    <label><input id="check3" type="checkbox"/> Re</label> <br/>
+</form>
+<script>
+    let check1 = document.getElementById("check1").checked;
+    let check2 = document.getElementById("check2").checked;
+    let check3 = document.getElementById("check3").checked;
+    if (check1){
+        document.getElementById("check2").checked
+    }
+</script>
+</body>
+</html>

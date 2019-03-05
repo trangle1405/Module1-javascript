@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so ngay trong thang</title>
+</head>
+<body>
+<form>
+Nhap vao thang: <br><input id="thang" type="number" value='0' name="thang">
+<button onclick="soNgay()" type="button">Tinh so ngay</button>
+<br><br>
+</form>
+<script>
+    function soNgay() {
+        var thang = parseInt(document.getElementById("thang").value)
+        switch (thang) {
+            case 2:
+                alert('thang 2 co 28 hoac 29 ngay');
+                break;
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert('thang ' + thang + ' co 31 ngay');
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert('thang ' + thang + ' co 30 ngay');
+                break;
+            default:
+                alert(' nhap thang khong hop le')
+        }
+
+    }
+</script>
+</body>
+</html>

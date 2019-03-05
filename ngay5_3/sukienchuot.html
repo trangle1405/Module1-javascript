@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>Click button below to move the image to down</p>
+    <input type="button" value="Click Me!" onclick="moveDown()" />
+    <img id="myImage" src="meo.jpg" />
+</form>
+<script>
+    let anhMeo = null;
+    anhMeo = document.getElementById('myImage');
+    function init() {
+        anhMeo = document.getElementById('myImage');
+        anhMeo.style.position = 'relative';
+        anhMeo.style.top = '0px';
+    }
+    function moveDown() {
+        anhMeo.style.top = parseInt(anhMeo.style.top) + 10 + 'px';
+    }
+    window.onload = init;
+
+</script>
+</body>
+</html>
