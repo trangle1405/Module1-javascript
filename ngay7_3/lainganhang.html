@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lai ngan hang</title>
+</head>
+<body>
+<script>
+    // so tien goc
+    // lai xuat
+    // so thang cho vay
+    var tienBanDau = tienGoc = parseInt(prompt('nhap vao so tien goc'));
+    var laiXuat = parseInt(prompt('lai xuat la:'));
+    var thoiGian = parseInt(prompt('so thang cho vay:'));
+    var tienLai = 0;
+    for (var i = 1; i <= thoiGian; i++){
+        tienLai = tienGoc * laiXuat / 100;
+        tienGoc = tienGoc + tienLai;
+    }
+    var a = tienGoc - tienBanDau;
+    alert('sau ' + thoiGian +' thang, so tien lai la: ' + a);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoc luc hoc sinh</title>
+</head>
+<body>
+<script>
+let diemKiemTra = parseInt(prompt('nhap vao diem kiem tra'));
+let diemGiuaKy = parseInt(prompt('nhap vao diem giua ky'));
+let diemThi = parseInt(prompt('nhap vao diem thi cuoi ky'));
+let diemTrungBinh = (diemKiemTra + diemGiuaKy * 2 + diemThi * 3)/6;
+if (diemTrungBinh < 6.5){
+    alert('diem trung binh la: ' + diemTrungBinh + ' - hoc luc trung binh');
+} else
+    if (diemTrungBinh < 8){
+        alert('diem trung binh la: ' + diemTrungBinh + ' - hoc luc kha');
+    } else
+        alert('diem trung binh la: ' + diemTrungBinh + ' - hoc luc gioi');
+</script>
+</body>
+</html>

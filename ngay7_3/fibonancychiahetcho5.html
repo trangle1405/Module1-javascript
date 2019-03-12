@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> số đầu tiên trong dãy fibonacci chia hết cho 5</title>
+</head>
+<body>
+<script>
+    var i = 0;
+    var j = 1;
+    var text = "0 , 1, ";
+    for (var count = 2; count < 20; count += 2){ //dung vong lap vo han?
+        i = i + j;
+        text = text + i + ", ";
+        if (i%5 === 0){
+            alert('so dau tien trong day Fibonaccy chia het cho 5 la ' + i);
+            break;
+        }
+        j = j + i;
+        text = text + j + ", ";
+        if (j%5 === 0){
+            alert('so dau tien trong day Fibonaccy chia het cho 5 la ' + j);
+            break;
+        }
+    }
+    document.write(text);
+</script>
+</body>
+</html>

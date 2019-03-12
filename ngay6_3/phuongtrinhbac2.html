@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phuong trinh bac 2</title>
+</head>
+<body>
+ <script>
+     let a = parseInt(prompt('nhap vao he so a cua phuong trinh ax2 + bx + c = 0'));
+     let b = parseInt(prompt('nhap vao he so b cua phuong trinh ax2 + bx + c = 0'));
+     let c = parseInt(prompt('nhap vao he so c cua phuong trinh ax2 + bx + c = 0'));
+     if (a === 0){
+         alert('khong thoa dieu kien a khac 0');
+     } else {
+         let delta = b * b - 4 * a * c;
+         if (delta < 0){
+             document.write('phuong trinh vo nghiem');
+         } else {
+             if (delta === 0){
+                 x = -b / 2*a;
+                 document.write('phuong trinh co nghiem kep x1 = x2 = ' + x);
+             } else {
+                 x1 = ( -b + Math.sqrt(delta))/ ( 2*a);
+                 x2 = ( -b - Math.sqrt(delta))/ ( 2*a);
+                 document.write('nghiem thu nhat la' + x1);
+                 document.write('<br>')
+                 document.write('nghiem thu hai la' + x2);
+             }
+         }
+     }
+ </script>
+</body>
+</html>

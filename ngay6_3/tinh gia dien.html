@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh gia dien</title>
+</head>
+<body>
+<script>
+    let soChuDien = parseInt(prompt('nhap vao so chu dien cua gia dinh ban'));
+    let soTien = 0;
+    if (soChuDien <= 50) {
+        soTien = soChuDien * 1000;
+    } else {
+        if (soChuDien <= 100){
+            soTien = 50000 + (soChuDien - 50)*2000;
+        } else {
+            soTien = 150000 + (soChuDien - 100)*3000;
+        }
+    }
+    alert(' so tien cua gia dinh ban la ' + soTien);
+</script>
+</body>
+</html>

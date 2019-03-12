@@ -8,8 +8,9 @@
 <script>
     let weight = parseInt(prompt('nhap vao can nang cua ban'));
     let height = parseInt(prompt('nhap vao chieu cao cua ban'));
-    bmi = weight / (height*height);
-    if (bmi < 18)
+    bmi = weight / (height * height);
+    const under = 18;
+    if (bmi < under)
         document.write('chi so bmi la ' + bmi + ' : ban bi thieu can');
     else if (bmi < 25)
         document.write('chi so bmi la ' + bmi + ' : can nang binh thuong');

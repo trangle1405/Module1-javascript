@@ -7,7 +7,8 @@
 <body>
 <script>
     var year = parseInt(prompt('nhap vao nam'));
-    if (year % 4 === 0){
+    var isMod4 = year % 4 === 0;
+    if (isMod4){
         if (year % 100 === 0){
             if (year % 400 === 0){
                 alert(year +' la nam nhuan');

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung dung may tinh</title>
+</head>
+<body>
+<h1>May tinh</h1>
+<input id="number1" type="number"  value="0">
+<input id="number2" type="number" value="0" >
+<br>
+<br>
+<input id="cong" type="button" value="    +    " onclick="phepTinhCong()">
+<input id="tru"  type="button" value="    -    " onclick="phepTinhTru()">
+<input id="nhan" type="button" value="    *    " onclick="phepTinhNhan()">
+<input id="chia" type="button" value="    /    " onclick="phepTinhChia()">
+<br>
+<h1 id="demo"></h1>
+<script>
+
+ function phepTinhCong() {
+     var number1 = parseInt(document.getElementById("number1").value);
+     var number2 = parseInt(document.getElementById("number2").value);
+    var tong = number1 + number2;
+     document.getElementById("demo").innerHTML = tong;
+ }     
+ function phepTinhTru() {
+     var number1 = parseInt(document.getElementById("number1").value);
+     var number2 = parseInt(document.getElementById("number2").value);
+    var a = number1 - number2;
+     document.getElementById("demo").innerHTML = a;
+ }
+ function phepTinhNhan() {
+     var number1 = parseInt(document.getElementById("number1").value);
+     var number2 = parseInt(document.getElementById("number2").value);
+    var a = number1 * number2;
+     document.getElementById("demo").innerHTML = a;
+ }
+ function phepTinhChia() {
+     var number1 = parseInt(document.getElementById("number1").value);
+     var number2 = parseInt(document.getElementById("number2").value);
+    var a = number1 / number2;
+     document.getElementById("demo").innerHTML = a;
+ }
+</script>
+
+</body>
+</html>

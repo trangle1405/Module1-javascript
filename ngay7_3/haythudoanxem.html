@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="choi()">Bat dau choi</button>
+<script>
+    function choi() {
+        var min = parseInt(prompt('ban muon doan trong khoang tu... '));
+        var max = parseInt(prompt('den...'));
+        var soNgauNhien = Math.floor(Math.random()*(max - min + 1) + min);
+        var soDoan = parseInt(prompt('so ban doan la'));
+        for (var i = 1; i< 3; i++){
+            if (soDoan > soNgauNhien) {
+                soDoan = parseInt(prompt('so nay nho hon so dung, moi ban chon lai'));
+            } else if (soDoan === soNgauNhien){
+                alert('Chuc mung! Ban da doan dung!');
+                break;
+            } else {
+                soDoan = parseInt(prompt('so nay lon hon so dung, moi ban chon lai'));
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dao nguoc phan tu</title>
+</head>
+<body>
+<script>
+    let numbers = [-3, 4, 7, 2, 9, 8, 1];
+    let first = 0;
+    let last = numbers.length - 1;
+    var a = 0;
+    while(first<last){
+        a = numbers[first];
+        numbers[first] = numbers[last];
+        numbers[last] = a;
+        first++;
+        last--;
+    }
+    document.write(numbers);
+</script>
+</body>
+</html>

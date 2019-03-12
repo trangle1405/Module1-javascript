@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do you love me?</title>
+</head>
+<body onload="docReady()">
+<h1>Do you love me?</h1>
+<br>
+<input type="button" value="YES" onclick="hienthi()" style="position:absolute; left: 50px; top:100px;">
+<input type="button" id = "nutNo" value="NO" onmouseover="dichuyen()" style="position: absolute; left: 100px; top: 100px;">
+<script>
+    function hienthi() {
+        alert('<3');
+    }
+    function dichuyen() {
+        var x = Math.round(Math.random() * window.innerWidth);
+        var y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('nutNo').style.left = x + 'px';
+        document.getElementById('nutNo').style.top = y + 'px';
+    }
+</script>
+</body>
+</html>
+
+

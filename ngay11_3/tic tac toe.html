@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tic tac toe</title>
+</head>
+<body>
+<h1>Tic tac toe </h1>
+<p id="banCo"></p>
+<input type="button" value="player 1" onclick="player1()">
+<input type="button" value="player 2" onclick="player2()">
+<script>
+    let banco = [];
+    let inbanco = "";
+    for (var i = 0; i < 5; i++) {
+        banco[i] = new Array('.', '.', '.', '.', '.');
+    }
+
+    for (var i = 0; i < 5; i++) {
+        inbanco += "<br/>";
+        for (var j = 0; j < 5; j++) {
+            inbanco += banco[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp";
+        }
+    }
+    document.getElementById("banCo").innerHTML = inbanco;
+
+    function player1() {
+        let inbanco = "";
+        let hang = parseInt(prompt(' doi ky tu hang so'));
+        let cot = parseInt(prompt(' doi ky tu cot so'));
+        data = "";
+        banco[hang - 1][cot - 1] = "x";
+        for (var i = 0; i < 5; i++) {
+            inbanco += "<br/>";
+            for (var j = 0; j < 5; j++) {
+                inbanco += banco[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp";
+            }
+        }
+        document.getElementById("banCo").innerHTML = inbanco;
+        checkWin();
+    }
+
+    function player2() {
+        let inbanco = "";
+        let hang = parseInt(prompt(' doi ky tu hang so'));
+        let cot = parseInt(prompt(' doi ky tu cot so'));
+        data = "";
+        banco[hang - 1][cot - 1] = "o";
+        for (var i = 0; i < 5; i++) {
+            inbanco += "<br/>";
+            for (var j = 0; j < 5; j++) {
+                inbanco += banco[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp";
+            }
+        }
+        document.getElementById("banCo").innerHTML = inbanco;
+        checkWin();
+    }
+
+    function checkWin() {
+
+        for (var i = 0; i < 3; i++) {
+            for (var j = 0; j < 3; j++) {
+                if ((banco[i][j] === banco[i][j + 1]) && (banco[i][j + 1] === banco[i][j+2])) {
+                    if(banco[i][j] === "x"){
+                        alert('x win');
+                    }
+                    if(banco[i][j] === "o"){
+                        alert('o win');
+                    }
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>

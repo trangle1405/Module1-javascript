@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibonacci</title>
+</head>
+<body>
+<script>
+    var i = 0;
+    var j = 1;
+    var text = "0 , 1, ";
+    for (var count = 2; count < 20; count += 2){
+        i = i + j;
+        text = text + i + ", ";
+        j = j + i;
+        text = text + j + ", ";
+    }
+    document.write(text);
+</script>
+</body>
+</html>

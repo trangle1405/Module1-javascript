@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faking Textarea on Typing</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+    textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+</style>
+<body>
+<form>
+    <h1>Type Anything Slowly</h1>
+    <textarea id="text" value="" onkeypress="printText()"></textarea>
+    <script>
+        var string = 'ahihi do ngoc';
+        var str = string.toString();
+
+        function printText() {
+            var text = document.getElementById("text").value;
+            var j = text.length;
+            var fakeText = "";
+            for (var i = 0; i<=j; i++){
+                fakeText += str[i];
+                if (i === str.length){
+                    document.getElementById("text").value = "";
+                }
+            }
+            document.getElementById("text") = fakeText;
+            fakeText = "";
+        }
+
+    </script>
+</form>
+</body>
+</html>

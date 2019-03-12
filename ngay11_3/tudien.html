@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu dien</title>
+</head>
+<body>
+<input id="newword" >
+<input type="button" value="Dich" onclick="trans()">
+<script>
+    var english = ['dog', 'cat', 'bird', 'fish'];
+    var tiengviet = ['cho', 'meo', 'chim', 'ca'];
+    function trans() {
+        newword = document.getElementById("newword").value;
+        if (english.indexOf(newword) !== -1){
+             var i = english.indexOf(newword);
+             alert(tiengviet[i]);
+        }
+        if (tiengviet.indexOf(newword) !== -1){
+            var i = tiengviet.indexOf(newword);
+            alert(english[i]);
+        }
+    }
+</script>
+</body>
+</html>

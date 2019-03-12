@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game puzzle</title>
+</head>
+<body>
+<div style="padding-left: 60px;">
+<img id = "hinh1" src = "images/cat1.jpg" alt="images/cat1.jpg" width="800" height="160" onclick = "changeImage('hinh1','IMAGE_ONE')"><br>
+<img id = "hinh2" src = "images/cat2.jpg" alt="images/cat2.jpg" width="800" height="160" onclick = "changeImage('hinh2','IMAGE_TWO')"><br>
+<img id = "hinh3" src = "images/cat3.jpg" alt="images/cat3.jpg" width="800" height="160" onclick = "changeImage('hinh3','IMAGE_THREE')"><br>
+<img id = "hinh4" src = "images/cat4.jpg" alt="images/cat4.jpg" width="800" height="160" onclick = "changeImage('hinh4','IMAGE_FOUR')"><br>
+<img id = "hinh5" src = "images/cat5.jpg" alt="images/cat5.jpg" width="800" height="160" onclick = "changeImage('hinh5','IMAGE_FIVE')"><br>
+</div>
+
+
+<script>
+    let images1 = ['images/cat1.jpg','images/monkey1.jpg', 'images/panda1.jpg'];
+    let images2 = ['images/cat2.jpg','images/monkey2.jpg', 'images/panda2.jpg'];
+    let images3 = ['images/cat3.jpg','images/monkey3.jpg', 'images/panda3.jpg'];
+    let images4 = ['images/cat4.jpg','images/monkey4.jpg', 'images/panda4.jpg'];
+    let images5 = ['images/cat5.jpg','images/monkey5.jpg', 'images/panda5.jpg'];
+
+   //  function changeImage1() {
+   //      let random1 = Math.floor(Math.random() * 3);
+   //      // let hinh1 = document.getElementById('hinh1').alt;
+   //      document.getElementById('hinh1').src = images1[random1];
+   //      document.getElementById('hinh1').alt = images1[random1]
+   //     checkStop();
+   //  }
+   // function changeImage2() {
+   //    let random2 = Math.floor(Math.random()*3);
+   //    document.getElementById('hinh2').src = images2[random2];
+   //    document.getElementById('hinh2').alt = images2[random2];
+   //     checkStop();
+   //  }
+   //
+   //  function changeImage3() {
+   //      let random3 = Math.floor(Math.random()*3);
+   //      document.getElementById('hinh3').src = images3[random3];
+   //      document.getElementById('hinh3').alt = images3[random3];
+   //      checkStop();
+   //  }
+   //
+   //  function changeImage4() {
+   //      let random4 = Math.floor(Math.random()*3);
+   //      document.getElementById('hinh4').src = images4[random4];
+   //      document.getElementById('hinh4').alt = images4[random4];
+   //      checkStop();
+   //  }
+   //
+   //  function changeImage5() {
+   //      let random5 = Math.floor(Math.random()*3);
+   //      document.getElementById('hinh5').src = images5[random5];
+   //      document.getElementById('hinh5').alt = images5[random5];
+   //      wait(300,checkStop)
+   //  }
+
+   function getImagesListFromType(type) {
+       switch (type) {
+           case "IMAGE_ONE":
+               return images1
+           case "IMAGE_TWO":
+               return images2
+           case "IMAGE_THREE":
+               return images3
+
+           default:
+               break;
+       }
+   }
+    function changeImage(idImage, type="IMAGE_ONE") {
+       console.log("------------",idImage)
+        const arrayImage = getImagesListFromType(type)
+        console.log("----------------", arrayImage)
+        let random5 = Math.floor(Math.random()*3);
+             document.getElementById(idImage).src = arrayImage[random5];
+             document.getElementById(idImage).alt = arrayImage[random5];
+             wait(300,checkStop)
+         }
+    function wait(ms, cb) {
+        setTimeout(cb, ms)
+    }
+    function checkStop() {
+
+        let hinh1 = document.getElementById('hinh1').alt;
+        let hinh2 = document.getElementById('hinh2').alt;
+        let hinh3 = document.getElementById('hinh3').alt;
+        let hinh4 = document.getElementById('hinh4').alt;
+        let hinh5 = document.getElementById('hinh5').alt;
+
+        if (hinh1 == images1[1]&& hinh2 == images2[1]&&hinh3 == images3[1] && hinh4 == images4[1] && hinh5 == images5[1]){
+            alert('sfgdf');
+        }
+   }
+</script>
+
+</body>
+</html>

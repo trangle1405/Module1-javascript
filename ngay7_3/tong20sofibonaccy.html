@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tổng của 20 số đầu tiên trong dãy fibonacci.</title>
+</head>
+<body>
+<script>
+    var i = 0;
+    var j = 1;
+    var text = "0 , 1, ";
+    var tong = i + j;
+    for (var count = 2; count < 20; count += 2){
+        i = i + j;
+        text = text + i + ", ";
+        tong = tong + i;
+        j = j + i;
+        text = text + j + ", ";
+        tong = tong + j;
+    }
+    document.write(text + "<br>");
+    document.write('tong la ' + tong);
+</script>
+</body>
+</html>
