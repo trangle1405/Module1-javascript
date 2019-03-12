@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>so sanh voi 10</title>
+</head>
+<body>
+<script>
+    var numbers = new Array(10);
+    var j = 0;
+    for (var i = 0; i < numbers.length; i++){
+        j = i+1;
+        numbers[i] = prompt('nhap gia tri thu ' + j);
+    }
+    var text = "";
+    for (var i = 0; i < numbers.length; i++){
+        if(numbers[i] >= 10){
+            text += numbers[i] + ", ";
+        }
+    }
+    document.write('cac gia tri lon hon 10 la ' + text);
+</script>
+</body>
+</html>
