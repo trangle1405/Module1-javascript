@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>sap xep mang</title>
 </head>
 <body>
-$END$
+<script>
+    var numbers = new Array(10);
+    var j = 0;
+    for (var i = 0; i < numbers.length; i++){
+        j = i+1;
+        numbers[i] = prompt('nhap gia tri thu ' + j);
+    }
+    numbers.sort(function (a, b) {
+        return a-b;
+    })
+    document.write(numbers);
+</script>
 </body>
 </html>

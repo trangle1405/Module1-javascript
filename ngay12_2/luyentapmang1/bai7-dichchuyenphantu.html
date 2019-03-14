@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    var numbers = new Array(10);
+    var j = 0;
+    for (var i = 0; i < numbers.length; i++){
+        j = i+1;
+        numbers[i] = parseInt(prompt('nhap gia tri thu ' + j));
+    }
+
+    var v =parseInt(prompt('nhap vao so v'));
+    if (numbers.indexOf(v) !== -1){
+        numbers.splice(numbers.indexOf(v),1);
+        numbers.push(0);
+    }
+    alert(numbers.join());
+</script>
 </body>
 </html>

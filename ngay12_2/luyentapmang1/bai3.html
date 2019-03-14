@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>gia tri lon nhat va gia tri trung binh</title>
 </head>
 <body>
-$END$
+<script>
+    var numbers = new Array(10);
+    var j = 0;
+    for (var i = 0; i < numbers.length; i++){
+        j = i+1;
+        numbers[i] = parseInt(prompt('nhap gia tri thu ' + j));
+    }
+    var max = numbers[0];
+    var tong = 0;
+    for (i=0; i<numbers.length; i++){
+        if (max < numbers[i]){
+            max = numbers[i];
+            tong = tong + numbers[i];
+        }
+    }
+    var trungbinh = tong / numbers.length;
+
+    alert('gia tri lon nhat mang la ' + max + ' va gia tri trung binh cua mang la ' + trungbinh);
+</script>
 </body>
 </html>

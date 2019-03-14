@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi feet va meters</title>
+</head>
+<body>
+<script>
+    function meterToFoot(meter) {
+        meter = parseInt(prompt('nhap chieu dai meter'));
+        var foot = meter * 3.279;
+        alert(foot);
+    }
+
+    function footToMeter(foot) {
+        foot = parseInt(prompt('nhap chieu dai foot'));
+        var meter = 0.305 * foot;
+        alert(meter);
+    }
+
+    var length = prompt('chuyen tu:');
+    switch (length) {
+        case "foot to meter":
+            footToMeter();
+            break;
+        case "meter to foot":
+            meterToFoot();
+            break;
+    }
+</script>
+</body>
+</html>

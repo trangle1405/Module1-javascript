@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check so nguyen duong</title>
+</head>
+<body>
+<script>
+    function checkPositiveInteger(number) {
+        if (isNaN(number)) {
+            alert('khong phai so');
+        } else
+            return number > 0
+    }
+
+    var a = parseInt(prompt('nhap so'));
+    if (checkPositiveInteger(a)) {
+        alert(a + ' la so nguyen duong');
+    } else
+        alert(a + ' khong la so nguyen duong');
+</script>
+</body>
+</html>

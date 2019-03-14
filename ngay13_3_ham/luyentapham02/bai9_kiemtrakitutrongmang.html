@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraKyTu(mang, kyTu) {
+        if (mang.indexOf(kyTu) === -1) {
+            return mang.indexOf(kyTu);
+        } else {
+            var patt = new RegExp(kyTu, "gi")
+            var tanSuat = mang.match(patt).length;
+            return tanSuat
+        }
+    }
+    var mang = prompt("nhap vao dong chu bat ky");
+    var kiTu = prompt('nhap vao ky tu bat ky');
+    alert('so lan xuat hien ki tu trong mang la ' + kiemTraKyTu(mang,kiTu));
+</script>
+</body>
+</html>

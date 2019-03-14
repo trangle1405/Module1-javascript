@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhGiaiThua(n) {
+        var giaiThua = 1;
+        for (var i = 1; i <= n; i++ ){
+            giaiThua = giaiThua * i;
+        }
+        return giaiThua;
+    }
+    var n = parseInt(prompt('nhap vao so can tinh gia thua'));
+    alert('gia thua cua ' + n + ' la ' + tinhGiaiThua(n));
+</script>
+</body>
+</html>

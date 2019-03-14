@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>tim phan tu</title>
 </head>
 <body>
-$END$
+<script>
+    var numbers = new Array(10);
+    var j = 0;
+    for (var i = 0; i < numbers.length; i++){
+        j = i+1;
+        numbers[i] = parseInt(prompt('nhap gia tri thu ' + j));
+    }
+
+    var v =parseInt(prompt('nhap vao so v'));
+    if (numbers.indexOf(v) !== -1){
+        alert('v la co trong mang')
+    }else
+        alert('v khong co trong mang');
+</script>
 </body>
 </html>

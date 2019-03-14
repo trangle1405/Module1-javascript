@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPalindrome(s) {
+        var doixung = true;
+        for (var i = 0, j = s.length - 1; i <= j; i++, j--) {
+            if (s[i] != s[j]) {
+                doixung = false;
+            }
+        }
+        return doixung;
+    }
+
+    var word = prompt('nhap vao tu de kiem tra doi xung');
+    if (isPalindrome(word)) {
+        alert(word + ' la tu doi xung');
+    } else
+        alert(word + ' khong la tu doi xung');
+</script>
+</body>
+</html>
