@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Phone</title>
+    <style>
+        .b {
+            width: 50px;
+            height: 25px;
+        }
+        .a {
+            width: 33.55%;
+            height: 70px;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 34px;
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        .slider.round {
+            border-radius: 17px;
+        }
+        .slider.round:before {
+            border-radius: 25%;
+        }
+    </style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <th>
+            <h3 id="pin">100%</h3>
+        </th>
+        <th> <input type="button" id="resetpin" class="b" value="Reset" onclick="a.resetPin();"></th>
+        <th><select id="phoneType">
+            <option value="Nokia">Nokia</option>
+            <option value="Iphone">Iphone</option>
+        </select></th>
+
+    </tr>
+</table>
+<label class="switch">
+    <input type="checkbox" id="myCheck" onclick="a.turnOnOff()">
+    <span class="slider round"></span>
+</label>
+<div id="container" hidden="hidden">
+    <input type="button" class="button" id value="Soạn thư +" onclick="a.soanTin();">
+    <input type="button" class="button" value="Hộp thư đến" onclick="a.hopThuden();">
+    <input type="button" class="button" value="Thư đã gửi" onclick="a.thuDaGui();">
+    <div id="container1" hidden="hidden">
+        <input type="text" class="a" id="vietThu" placeholder="Nhập nội dung">
+        <input type="button" value="Gửi" id="gui" onclick="a.guiThu();">
+    </div>
+    <div id="container2" hidden="hidden">
+        <p id="thudagui">Nội dung </p>
+    </div>
+    <div id="container3" hidden="hidden">
+        <p id="thuden">Thư Đến :</p>
+    </div>
+</div>
+
+
+<script>
+    let pin = 99;
+    let isOpen = false;
+    let Mobile = function (type) {
+        this.type = type;
+        this.setType = function (type){
+            return type;
+        }
+        this.turnOnOff = function () {
+            var checkBox = document.getElementById("myCheck");
+            if (checkBox.checked == true) {
+                document.getElementById("container").hidden = false;
+            } else {
+                document.getElementById("container").hidden = true;
+            }
+        }
+        this.soanTin = function () {
+            document.getElementById('container1').hidden = false;
+            document.getElementById('container2').hidden = true;
+            document.getElementById('container3').hidden = true;
+            document.getElementById('pin').innerHTML = pin-- + "%";
+        }
+        this.guiThu = function () {
+            confirm("Thư đã gửi: " + document.getElementById("vietThu").value);
+            document.getElementById('pin').innerHTML = pin-- + "%";
+        }
+        this.hopThuden = function () {
+            document.getElementById('pin').innerHTML = pin-- + "%";
+            document.getElementById('container1').hidden = true;
+            document.getElementById('container3').hidden = false;
+            document.getElementById('container2').hidden = true;
+        }
+        this.thuDaGui = function () {
+            document.getElementById('container2').hidden = false;
+            document.getElementById('container1').hidden = true;
+            document.getElementById('container3').hidden = true;
+            document.getElementById('container2').innerHTML = "Nội dung :   " + document.getElementById("vietThu").value + "  >>>Tới" + type;
+            document.getElementById('pin').innerHTML = pin-- + "%";
+        }
+        this.resetPin = function () {
+            document.getElementById('pin').innerHTML = "100%";
+            pin = 99;
+        }
+    }
+    let a = new Mobile('Nokia');
+    if(document.getElementById("phoneType").value ==="Nokia"){
+        a = new Mobile('Nokia');
+    }
+    else if(document.getElementById("phoneType").value ==="Iphone"){
+        a = a.setType('Iphone');
+    }
+</script>
+</body>
+
+</html>

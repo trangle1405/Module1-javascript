@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhiet do hien tai: <input type="number" id="nhietdo" min="-273">
+<input type="button" onclick="tinhnhietdo()" value="chuyen">
+<script>
+    function nhietdo(doC) {
+        this.doC = doC;
+        this.getdoF = function () {
+            return this.doC*1.8 +32;
+        }
+        this.getdoK = function () {
+            return this.doC + 273;
+        }
+    }
+    function tinhnhietdo() {
+        let nhietdoC = document.getElementById("nhietdo").value;
+        nhietdo1 = new nhietdo(nhietdoC)
+        alert('nhiet do f la: ' + nhietdo1.getdoF() + ' nhiet do K la ' + nhietdo1.getdoK());
+    }
+</script>
+</body>
+</html>

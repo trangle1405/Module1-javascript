@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay dung lop hinh tron</title>
+</head>
+<body>
+<script>
+   function circle(radius, color) {
+       this.radius = radius;
+       this.color = color;
+       this.getRadius = function () {
+           return radius;
+       }
+       this.getArea = function () {
+           return Math.PI*radius*radius;
+       }
+   }
+   let hinhTron1 = new circle(2);
+   alert('ban kinh la' + hinhTron1.getRadius() + ' dien tich la ' + hinhTron1.getArea());
+</script>
+</body>
+</html>

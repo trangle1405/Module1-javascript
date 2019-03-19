@@ -7,17 +7,17 @@
 <body>
 <script>
     function checkPositiveInteger(number) {
-        if (isNaN(number)) {
-            alert('khong phai so');
+        if (Number.isInteger(number)) {
+            if (number > 0) {
+                alert('la so nguyen duong')
+            } else
+                alert(' khong la so nguyen duong');
         } else
-            return number > 0
+            alert('khong la so nguyen');
     }
 
-    var a = parseInt(prompt('nhap so'));
-    if (checkPositiveInteger(a)) {
-        alert(a + ' la so nguyen duong');
-    } else
-        alert(a + ' khong la so nguyen duong');
+    var a = parseFloat(prompt('nhap so'));
+    checkPositiveInteger(a);
 </script>
 </body>
 </html>

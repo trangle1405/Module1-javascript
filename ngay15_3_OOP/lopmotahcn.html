@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lop mo ta hinh chu nhat</title>
+</head>
+<body>
+Width: <input type="number" id="width" max="300">
+Height: <input type="number" id="height" max="300">
+<input type="button" value="print" onclick="tinh()"><br>
+<canvas id="hcn" width="300px" height="300px" style="border:1px solid #d3d3d3;"></canvas>
+<p id="dientich"></p>
+<p id="chuvi"></p>
+<script>
+    function rectangle(dai, rong) {
+        this.dai = dai;
+        this.rong = rong;
+        this.getDienTich = function () {
+            return dai * rong;
+        }
+
+        this.getChuVi = function () {
+            return (dai + rong) * 2;
+        }
+
+        this.createRectangle = function () {
+            var ctx = document.getElementById("hcn").getContext("2d");
+            ctx.clearRect(0, 0, 1000, 1000);
+            ctx.strokeRect(20, 20, this.dai, this.rong);
+
+        }
+    }
+    function tinh() {
+        let a = document.getElementById("width").value;
+        let b = document.getElementById("height").value;
+        let hcn1 = new rectangle(a, b);
+        hcn1.createRectangle();
+        document.getElementById("dientich").innerHTML = "dien tich la " + hcn1.getDienTich();
+        document.getElementById("chuvi").innerHTML = "chu vi la " + hcn1.getChuVi();
+    }
+</script>
+</body>
+</html>

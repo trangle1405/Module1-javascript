@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dien thoai</title>
+</head>
+<body>
+<h1 id="nokia">NOKIA</h1>
+trang thai pin: <p id="pinNokia">100</p>
+Tinh trang: <p id="tinhtrangNokia">on</p>
+<textarea id="soanNokia" rows="4" cols="50"></textarea><br><br>
+<input type="button" value="Gui" id=guiNokia>
+<hr>
+<h1 id="iphone">IPHONE</h1>
+trang thai pin: <p id="pinIphone">100</p>
+Tinh trang: <p id="tinhtrangIphone">on</p>
+<textarea id="soanIphone" rows="4" cols="50"></textarea><br><br>
+<input type="button" value="Gui" id=guiIphone>
+
+<script>
+    function dienthoai(ten, trangthaipin, tinhtrang) {
+        let tinnhansoan;
+        let tinnhanden = [];
+        let tinnhangui = [];
+
+        function kiemtratrangthai() {
+            if (trangthaipin === 0) {
+                tinhtrang = false;
+            } else if (tinhtrang) {
+                document.getElementById("tinhtrang")
+            }
+        }
+
+        function sacpin() {
+            return trangthaipin = 100;
+        }
+
+        function soantinnhan() {
+            tinnhansoan = document.getElementById("soanNokia").value;
+        }
+
+        function nhantinnhan(tnGui) {
+            tinnhanden.push(tnGui);
+        }
+
+        function guitinnhan(tnGui) {
+            tinnhangui.push(tnGui);
+        }
+    }
+
+
+</script>
+</body>
+</html>
