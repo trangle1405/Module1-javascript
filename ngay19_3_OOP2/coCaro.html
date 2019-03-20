@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>co caro</title>
+</head>
+<body>
+<input id="start" value="Start" onclick=""><br><br>
+<div id="boardGame"></div>
+<script>
+    const VALUE_EMPTY = 1;
+    const VALUE_X = 2;
+    const VALUE_O = 3;
+    const DEFAULT_COLS = 10;
+    const DEFAULT_ROWS = 10;
+    const DEFAULT_CELL_SIZE = 40;
+
+    class Cell{
+        constructor(x, y){
+            this.x = x;
+            this.y = y;
+            this.value = VALUE_EMPTY;
+        }
+        GetHtml(){
+            var top = this.x* DEFAULT_CELL_SIZE;
+            var left = this.y * DEFAULT_CELL_SIZE;
+        }
+    }
+</script>
+</body>
+</html>

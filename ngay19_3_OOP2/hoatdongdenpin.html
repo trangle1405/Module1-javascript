@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoat dong den pin</title>
+</head>
+<body>
+<script>
+
+    class Battery {
+        setEnergy(energy) {
+            this.energy = energy;
+        }
+
+        getEnergy() {
+            return this.energy;
+        }
+
+        decreaseEnergy() {
+            if (this.energy > 0) {
+                this.energy--;
+            }
+        }
+    }
+
+    class FlashLamp {
+        setBattery(battery) {
+            this.battery = battery;
+        }
+
+        getBatteryInfo = function () {
+            return this.battery.getEnergy();
+        }
+
+        light() {
+            if (this.status) {
+                alert('den sang');
+            } else {
+                alert('den tat');
+            }
+        }
+
+        turnOn() {
+            this.status = true;
+            this.battery.decreaseEnergy();
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+    }
+
+    var battery1 = new Battery();
+    battery1.setEnergy(10);
+
+    var flashLamp1 = new FlashLamp();
+    flashLamp1.setBattery(battery1);
+
+    document.write("Battery info:" + flashLamp1.getBatteryInfo() + "<br/>");
+    flashLamp1.light();
+
+    document.write("Turn on<br/>")
+    flashLamp1.turnOn();
+    flashLamp1.light();
+    document.write("Battery info:" + flashLamp1.getBatteryInfo() + "<br/>");
+
+    document.write("Turn off<br/>")
+    flashLamp1.turnOff();
+    flashLamp1.light();
+</script>
+</body>
+</html>

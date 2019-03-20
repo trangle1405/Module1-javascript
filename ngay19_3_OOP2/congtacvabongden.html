@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cong tac và bong den</title>
+</head>
+<body>
+<input id="button1" type="button" value="On" onclick="congtac.handleButton()">
+
+<script>
+    class ElectricLamp {
+        constructor() {
+            this.status = false;
+        }
+
+        turnOff() {
+            this.status = false;
+            alert('den tat');
+            console.log("den tat")
+        }
+
+        turnOn() {
+            this.status = true;
+            alert('den sang');
+        }
+    }
+
+    class SwitchButton {
+
+        connectToLamp(ElectricLamp) {
+            this.lamp = ElectricLamp;
+        }
+
+        // switchOff(){
+        //     this.lamp.turnOff();
+        // }
+        // switchOn(){
+        //     this.lamp.turnOn();
+        // }
+        handleButton() {
+            if (this.lamp.status) {
+                document.getElementById("button1").value = "On";
+                return this.lamp.turnOff();
+            }
+            this.lamp.turnOn();
+            document.getElementById("button1").value = "Off";
+        }
+    }
+
+    var den = new ElectricLamp();
+    var congtac = new SwitchButton();
+    congtac.connectToLamp(den);
+
+</script>
+</body>
+</html>
