@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lop mo ta dien thoại</title>
+</head>
+<body>
+<h1 id="nokia">NOKIA</h1>
+Pin: <p id="pinNokia">100</p>
+Trang thai: <p id="trangThaiNokia"></p>
+<textarea id="soanNokia" rows="4" cols="50" onkeyup="nokia.soanTinNhan('soanNokia')"></textarea><br><br>
+<input type="button" id="guiNokia" value="Gui" onclick="nokia.guiTinNhan()">
+<input type="button" id="thudenNokia" value="hop thu den" onclick="nokia.xemTinDaNhan('soanNokia')">
+<input type="button" id="thuguiNokia" value="thu da gui" onclick="nokia.xemTinDaGui('soanNokia')">
+<input type="button" id="dangsoanNokia" value="tin nhan dang soan">
+<input type="button" id="onoffNokia" value="on/off" onclick="nokia.batTatDienThoai('trangThaiNokia')">
+<hr>
+<h1 id="iphone">IPHONE</h1>
+Pin: <p id="pinIphone">100</p>
+Trang thai: <p id="trangThaiIphone">on</p>
+<textarea id="soanIphone" rows="4" cols="50"></textarea><br><br>
+<input type="button" id="guiIphone" value="Gui">
+<input type="button" id="thudenIphone" value="hop thu den" onclick="">
+<input type="button" id="thuguiIphone" value="thu da gui" onclick="">
+<input type="button" id="dangsoanIphone" value="tin nhan dang soan" onclick="">
+<input type="button" id="onoffiphone" value="on/off" onclick="">
+
+<script>
+
+    class DienThoai {
+        constructor(ten, luongPin, trangThai) {
+            this.ten = ten;
+            this.luongPin = luongPin;
+            this.trangThai = trangThai;
+            this.soan = "";
+            this.tinNhanDen = [];
+            this.tinNhanGui = [];
+        }
+
+        ketNoiDienThoai(DienThoai) {
+            this.DienThoaiKetNoi = DienThoai;
+        }
+
+        checkTrangthai(id) {
+            if (this.trangThai) {
+                document.getElementById(id).innerHTML = "On";
+            } else document.getElementById(id).innerHTML = "Off"
+        }
+
+        batTatDienThoai(id) {
+            if (this.trangThai) {
+                this.trangThai = false;
+                this.checkTrangthai(id);
+            } else {
+                this.trangThai = true;
+                this.checkTrangthai(id);
+            }
+
+        }
+
+        sacPinDienThoai() {
+            this.luongPin = 10;
+        }
+
+        soanTinNhan(id) {
+            this.soan = document.getElementById(id).value;
+        }
+
+        guiTinNhan() {
+            this.DienThoaiKetNoi.tinNhanDen.push(this.soan);
+            this.tinNhanGui.push(this.soan);
+
+            this.luongPin--;
+        }
+
+        xemTinDaGui(id) {
+            var text = "";
+            // for (var i = 0; i < this.tinNhanGui.length; i++) {
+            //     text += this.tinNhanGui[i] + "\n";
+            // }
+            this.tinNhanGui.forEach(function (tinNhan) {
+                text += tinNhan + "\n"
+            })
+            console.log(text);
+            document.getElementById("soanNokia").value = text;
+            this.luongPin--;
+        }
+
+        xemTinDaNhan(id) {
+            var text = "";
+            for (var i = 0; i < this.tinNhanGui.length; i++) {
+                text = text + this.tinNhanGui[i] + "\n";
+            }
+            document.getElementById(id).innerHTML = text;
+            this.luongPin--;
+        }
+    }
+
+    var nokia = new DienThoai("Nokia", 10, false);
+    var iphone = new DienThoai("Iphone", 10, true);
+    nokia.ketNoiDienThoai(iphone);
+    iphone.ketNoiDienThoai(nokia);
+    document.getElementById("pinNokia").innerHTML = nokia.luongPin;
+    document.getElementById("pinIphone").innerHTML = iphone.luongPin;
+    nokia.checkTrangthai("trangThaiNokia");
+    iphone.checkTrangthai("trangThaiIphone");
+    document.getElementById("soanNokia").innerHTML = "abc";
+
+
+</script>
+</body>
+</html>

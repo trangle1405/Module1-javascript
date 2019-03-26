@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lam viec voi math</title>
+</head>
+<body>
+<script>
+    function randomNumber0_10() {
+        var number = Math.floor(Math.random() * 10 + 1);
+        return number;
+    }
+
+    function randonNumber0_400() {
+        var number = Math.floor(Math.random() * 400 + 1);
+        return number
+    }
+
+    function randomNumber50_100() {
+        var number = Math.floor(Math.random() * 50 + 51);
+    }
+    
+    function findMinNumber() {
+        var result = Math.min(5,7,2,9);
+        return result;
+    }
+    function luyThua(){
+        var  number = parseInt(prompt("nhap so can tinh"));
+        return Math.pow(number, 53);
+    }
+    function dienTichHinhTron(){
+        var r = parseFloat(prompt('ban kinh hinh tron'));
+        return Math.PI*r*r;
+    }
+
+     document.write(dienTichHinhTron());
+</script>
+</body>
+</html>

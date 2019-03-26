@@ -18,32 +18,41 @@ Tinh trang: <p id="tinhtrangIphone">on</p>
 <input type="button" value="Gui" id=guiIphone>
 
 <script>
-    function dienthoai(ten, trangthaipin, tinhtrang) {
-        let tinnhansoan;
-        let tinnhanden = [];
-        let tinnhangui = [];
+    class dienthoai {
+        constructor(ten, trangthaipin, tinhtrang) {
+            this.ten = ten;
+            this.trangthaipin = trangthaipin;
+            this.tinhtrang = tinhtrang;
+            this.tinnhansoan = '';
+            this.tinnhanden = [];
+            this.tinnhangui = [];
+        }
 
-        function kiemtratrangthai() {
+        ketnoi(dienthoai) {
+            this.dienthoai = dienthoai;
+        }
+
+        kiemtratrangthai() {
             if (trangthaipin === 0) {
-                tinhtrang = false;
+                this.tinhtrang = false;
             } else if (tinhtrang) {
                 document.getElementById("tinhtrang")
             }
         }
 
-        function sacpin() {
+        sacpin() {
             return trangthaipin = 100;
         }
 
-        function soantinnhan() {
-            tinnhansoan = document.getElementById("soanNokia").value;
+        soantinnhan() {
+            this.tinnhansoan = document.getElementById("soanNokia").value;
         }
 
-        function nhantinnhan(tnGui) {
+        nhantinnhan(tnGui) {
             tinnhanden.push(tnGui);
         }
 
-        function guitinnhan(tnGui) {
+        guitinnhan(tnGui) {
             tinnhangui.push(tnGui);
         }
     }

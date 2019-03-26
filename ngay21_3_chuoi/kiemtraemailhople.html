@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkemail(str) {
+        var patt = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(.[A-Za-z0-9]+)$/;
+        if (patt.test(str)){
+            alert("email hop le");
+        } else alert("emal khong hop le");
+    }
+    checkemail("@gmail.com")
+</script>
+</body>
+</html>

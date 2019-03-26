@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so dien thoai</title>
+</head>
+<body>
+<script>
+    function timSoViettel(array) {
+        let patt = /(032|033|034|035|036|037|038|039|098|097|096|086)+([0-9]{7})/;
+        let arrayviettel = [];
+        for (var i = 0; i < array.length; i++) {
+            if (patt.test(array[i])) {
+                arrayviettel.push(array[i]);
+            }
+        }
+        return arrayviettel;
+    }
+    var arr = ["0987998172", "0997998173", "0887998174", "0777998175", "0867998176", "0987998177", "0367998178", "0387998179"];
+    document.write(timSoViettel(arr));
+</script>
+</body>
+</html>

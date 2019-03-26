@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game doan so</title>
+</head>
+<body>
+<script>
+    function timPhanTu(array, data) {
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] === data)
+                return i;
+        }
+    }
+
+    let arr = [];
+    for (var i = 0; i < 100; i++) {
+        arr[i] = Math.floor(Math.random() * 101)
+    }
+
+    arr.sort(function (a, b) {
+        return a - b;
+    })
+
+
+</script>
+</body>
+</html>

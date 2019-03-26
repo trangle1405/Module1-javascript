@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Add New Product</h1>
+<input id="addsanpham">
+<input type="button" id="add" value="Add" onclick="add()">
+<h2>Display All Product</h2>
+<h3>Product Name</h3>
+<h3 id="sosanpham"></h3>
+<form id="data">
+    <input value="sony">
+    <input type="button" value="edit" onclick="edit(i)">
+    <input type="button" value="Delete" onclick="xoa(i)">
+    <br>
+</form>
+<form id="edit">
+    <!--<input id="editProduct" value="">-->
+    <!--<input type="button" value="Edit" onclick="doi()">-->
+    <!--<input type="button" value="X" onclick="turnoff()">-->
+</form>
+<script>
+    var listSanPham = ['Sony', 'samsung', 'nokia'];
+
+    function hienThiSanPham() {
+        var data = ""
+        for (var i = 0; i < listSanPham.length; i++) {
+            data += '<input value=' + listSanPham[i] + '>' +
+                '<input type="button" value="edit" onclick = "edit( ' + i + ')">' +
+                '<input type="button" value="Delete" onclick="xoa(' + i + ')"><br>';
+        }
+        document.getElementById("data").innerHTML = data;
+    }
+
+    hienThiSanPham();
+
+    function add(i) {
+        themSanPham = document.getElementById("addsanpham").value;
+        listSanPham.push(themSanPham);
+        hienThiSanPham();
+    }
+
+    function edit(i) {
+        var data = "";
+        data = '<input id="editProduct" value="' + listSanPham[i] + '">' +
+            '<input type="button" value="Edit" onclick="doi(' + i + ')">' +
+            '<input type="button" value="X" onclick="turnoff()">';
+        document.getElementById("edit").innerHTML = data;
+    }
+
+    function xoa(i) {
+        listSanPham.splice(i, 1);
+        hienThiSanPham();
+    }
+
+    function doi(i) {
+        listSanPham[i] = document.getElementById("editProduct").value;
+        hienThiSanPham();
+        turnoff();
+    }
+    function turnoff() {
+        document.getElementById("edit").innerHTML = "";
+    }
+</script>
+</body>
+</html>

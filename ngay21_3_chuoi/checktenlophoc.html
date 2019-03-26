@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check ten lop hoc</title>
+</head>
+<body>
+<script>
+    function checktenlop(str) {
+        var patt = /^[CAP][0-9]{4}[GHIKLM]/;
+        if (patt.test(str)){
+            alert("ten hop le");
+        }else
+            alert("ten khong hop le");
+    }
+    checktenlop("M0318G")
+</script>
+</body>
+</html>

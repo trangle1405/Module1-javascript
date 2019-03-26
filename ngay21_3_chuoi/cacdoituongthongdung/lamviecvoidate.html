@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lam viec voi date</title>
+</head>
+<body>
+<script>
+    function tinhngay() {
+      ngaysinh =   new Date(2018, 4, 14);
+      ngayhientai = new Date();
+
+      sonam = ngayhientai.getFullYear() -  ngaysinh.getFullYear();
+      sothang = sonam*12 + ngayhientai.getMonth() - ngaysinh.getMonth();
+      songay =Math.floor((ngayhientai.valueOf() - ngaysinh.valueOf())/86400000);
+      console.log(songay);
+    }
+    tinhngay();
+</script>
+</body>
+</html>

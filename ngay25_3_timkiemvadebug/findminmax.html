@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>find min max</title>
+</head>
+<body>
+<script>
+    function findMin(array) {
+        var min = array[0];
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+        return min;
+    }
+
+    function findMax(array) {
+        var max = array[0];
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        return max;
+    }
+     var arr = [];
+    for(i = 0; i <=100; i++){
+        arr[i] = Math.floor(Math.random()*101);
+    }
+    document.write(arr);
+    alert("max = " + findMax(arr));
+    alert("min = " + findMin(arr));
+</script>
+</body>
+</html>
