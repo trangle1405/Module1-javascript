@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="531c254d-88e8-48bc-8bb2-10bccd87ecd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ngay15_3_OOP/lopmotadienthoai.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/bieuthucchinhquy/demsonguyenam.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/bieuthucchinhquy/demsotu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/bieuthucchinhquy/kiemtradangngay.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/bieuthucchinhquy/masobaomat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/cacdoituongthongdung/lamviecvoidate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/cacdoituongthongdung/lamviecvoimath.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/cacdoituongthongdung/lamviecvoistring.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/checksodienthoai.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/checktenaccount.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/checktenlophoc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/isUpperCase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/kiemtraemailhople.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/kytudautienlachuhoa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay21_3_chuoi/maquocgia.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay25_3_timkiemvadebug/debug.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay25_3_timkiemvadebug/findminmax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay25_3_timkiemvadebug/gamedoanso.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay25_3_timkiemvadebug/solanxuathien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay25_3_timkiemvadebug/thuattoantimkiem.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ngay25_3_timkiemvadebug/ungdungquanlysanpham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy/duaxe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ngay25_3_timkiemvadebug/nhap.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ngay15_3_OOP/dienthoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/ngay15_3_OOP/dienthoai.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ngay7_3/haythudoanxem.html" beforeDir="false" afterPath="$PROJECT_DIR$/ngay7_3/haythudoanxem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nhap.html" beforeDir="false" afterPath="$PROJECT_DIR$/nhap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ngay19_3_OOP2/coCaro.html" beforeDir="false" afterPath="$PROJECT_DIR$/ngay19_3_OOP2/coCaro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nhap.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,83 +19,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngay25_3_timkiemvadebug/thuattoantimkiem.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngay25_3_timkiemvadebug/debug.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ngay25_3_timkiemvadebug/ungdungquanlysanpham.html">
+        <entry file="file://$PROJECT_DIR$/casestudy/duaxe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+            <state relative-caret-position="212">
+              <caret line="158" column="50" lean-forward="true" selection-start-line="158" selection-start-column="50" selection-end-line="158" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngay13_3_ham/quanlysanpham.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="8" lean-forward="true" selection-end-line="68" selection-end-column="7" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/casestudy/img/road.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngay15_3_OOP/dienthoai.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/casestudy/img/car.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngay15_3_OOP/lopmotadienthoai.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngay19_3_OOP2/pikachu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngay21_3_chuoi/kiemtraemailhople.html">
+        <entry file="file://$PROJECT_DIR$/baiCaro/cocaro.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="74" />
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngay21_3_chuoi/checktenaccount.html">
+        <entry file="file://$PROJECT_DIR$/baiCaro/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="289">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ngay25_3_timkiemvadebug/nhap.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -135,6 +80,10 @@
     <findStrings>
       <find>getHtml</find>
       <find>xemTinDaGui</find>
+      <find>type</find>
+      <find>myGamePiece</find>
+      <find>updateGameArea</find>
+      <find>myGameArea.key</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,8 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ngay13_3_ham/luyentapham02/bai3.html" />
-        <option value="$PROJECT_DIR$/ngay13_3_ham/luyentapham02/bai5_sonhonhat.html" />
         <option value="$PROJECT_DIR$/ngay13_3_ham/luyentapham02/bai7_doiso.html" />
         <option value="$PROJECT_DIR$/ngay13_3_ham/luyentapham02/bai8_daonguocmang.html" />
         <option value="$PROJECT_DIR$/ngay13_3_ham/luyentapham02/bai9_kiemtrakitutrongmang.html" />
@@ -168,7 +115,6 @@
         <option value="$PROJECT_DIR$/baiCaro/css/style.css" />
         <option value="$PROJECT_DIR$/baiCaro/cocaro.html" />
         <option value="$PROJECT_DIR$/baiCaro/js/script.js" />
-        <option value="$PROJECT_DIR$/ngay19_3_OOP2/coCaro.html" />
         <option value="$PROJECT_DIR$/ngay21_3_chuoi/isUpperCase.js" />
         <option value="$PROJECT_DIR$/ngay21_3_chuoi/kytudautienlachuhoa.html" />
         <option value="$PROJECT_DIR$/ngay21_3_chuoi/maquocgia.html" />
@@ -183,7 +129,6 @@
         <option value="$PROJECT_DIR$/ngay21_3_chuoi/cacdoituongthongdung/lamviecvoidate.html" />
         <option value="$PROJECT_DIR$/ngay21_3_chuoi/cacdoituongthongdung/lamviecvoimath.html" />
         <option value="$PROJECT_DIR$/ngay21_3_chuoi/cacdoituongthongdung/lamviecvoistring.html" />
-        <option value="$PROJECT_DIR$/nhap.html" />
         <option value="$PROJECT_DIR$/ngay25_3_timkiemvadebug/findminmax.html" />
         <option value="$PROJECT_DIR$/ngay25_3_timkiemvadebug/solanxuathien.html" />
         <option value="$PROJECT_DIR$/ngay25_3_timkiemvadebug/gamedoanso.html" />
@@ -194,12 +139,16 @@
         <option value="$PROJECT_DIR$/ngay19_3_OOP2/pikachu.html" />
         <option value="$PROJECT_DIR$/ngay25_3_timkiemvadebug/debug.html" />
         <option value="$PROJECT_DIR$/ngay25_3_timkiemvadebug/ungdungquanlysanpham.html" />
+        <option value="$PROJECT_DIR$/nhap.html" />
+        <option value="$PROJECT_DIR$/ngay19_3_OOP2/coCaro.html" />
+        <option value="$PROJECT_DIR$/ngay25_3_timkiemvadebug/nhap.html" />
+        <option value="$PROJECT_DIR$/casestudy/duaxe.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="677" />
-    <option name="width" value="691" />
+    <option name="x" value="667" />
+    <option name="width" value="706" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -210,12 +159,45 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
               <item name="hoc_lap_trinh_BP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoc_lap_trinh_BP" type="462c0819:PsiDirectoryNode" />
+              <item name="baiCaro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoc_lap_trinh_BP" type="462c0819:PsiDirectoryNode" />
+              <item name="baiCaro" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoc_lap_trinh_BP" type="462c0819:PsiDirectoryNode" />
+              <item name="casestudy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoc_lap_trinh_BP" type="462c0819:PsiDirectoryNode" />
+              <item name="casestudy" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoc_lap_trinh_BP" type="462c0819:PsiDirectoryNode" />
+              <item name="ngay11_3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoc_lap_trinh_BP" type="462c0819:PsiDirectoryNode" />
+              <item name="ngay12_2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
@@ -230,13 +212,24 @@
             <path>
               <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
               <item name="hoc_lap_trinh_BP" type="462c0819:PsiDirectoryNode" />
+              <item name="ngay19_3_OOP2" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoc_lap_trinh_BP" type="462c0819:PsiDirectoryNode" />
               <item name="ngay25_3_timkiemvadebug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoc_lap_trinh_BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoc_lap_trinh_BP" type="462c0819:PsiDirectoryNode" />
+              <item name="ngay25_3_timkiemvadebug" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,18 +298,24 @@
       <workItem from="1553217338248" duration="12133000" />
       <workItem from="1553480990676" duration="7302000" />
       <workItem from="1553526822819" duration="2234000" />
-      <workItem from="1553562154800" duration="1777000" />
+      <workItem from="1553562154800" duration="5013000" />
+      <workItem from="1553617032549" duration="537000" />
+      <workItem from="1553648978394" duration="5537000" />
+      <workItem from="1553654806921" duration="7230000" />
+      <workItem from="1553697773798" duration="6527000" />
+      <workItem from="1553735128583" duration="12575000" />
+      <workItem from="1553775020238" duration="5216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262774000" />
+    <option name="totallyTimeSpent" value="303632000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="677" y="0" width="691" height="728" extended-state="0" />
+    <frame x="667" y="0" width="706" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39050537" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3410959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -370,48 +369,15 @@
           <line>10</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/ngay25_3_timkiemvadebug/nhap.html</url>
+          <line>106</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ngay11_3/bancocaro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ngay13_3_ham/luyentapham01/bai5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ngay13_3_ham/kiemtratudoixung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ngay15_3_OOP/xaydunglopdate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ngay15_3_OOP/funnycircle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ngay15_3_OOP/lopmotanhietdo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -458,27 +424,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ngay19_3_OOP2.html" />
-    <entry file="file://$PROJECT_DIR$/ngay19_3_OOP2/congtacvabongden.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baiCaro/cocaro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ngay19_3_OOP2/coCaro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baiCaro/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -504,13 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baiCaro/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -567,16 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nhap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2669">
-          <caret line="157" column="9" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,6 +590,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nhap.html" />
+    <entry file="file://$PROJECT_DIR$/ngay25_3_timkiemvadebug/debug.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ngay25_3_timkiemvadebug/ungdungquanlysanpham.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ngay19_3_OOP2/coCaro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ngay13_3_ham/quanlysanpham.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="8" selection-end-line="68" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ngay15_3_OOP/dienthoai.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -672,7 +629,14 @@
     <entry file="file://$PROJECT_DIR$/ngay15_3_OOP/lopmotadienthoai.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ngay19_3_OOP2/pikachu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -690,31 +654,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ngay19_3_OOP2/pikachu.html">
+    <entry file="file://$PROJECT_DIR$/ngay19_3_OOP2/congtacvabongden.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="14" />
+          <caret line="17294" column="12" selection-start-line="17294" selection-start-column="12" selection-end-line="17294" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ngay25_3_timkiemvadebug/debug.html">
+    <entry file="file://$PROJECT_DIR$/casestudy/duaxe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state relative-caret-position="212">
+          <caret line="158" column="50" lean-forward="true" selection-start-line="158" selection-start-column="50" selection-end-line="158" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ngay13_3_ham/quanlysanpham.html">
+    <entry file="file://$PROJECT_DIR$/casestudy/img/road.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/casestudy/img/car.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baiCaro/cocaro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baiCaro/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="8" lean-forward="true" selection-end-line="68" selection-end-column="7" />
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ngay25_3_timkiemvadebug/ungdungquanlysanpham.html">
+    <entry file="file://$PROJECT_DIR$/ngay25_3_timkiemvadebug/nhap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+        <state relative-caret-position="425">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
         </state>
       </provider>
     </entry>
