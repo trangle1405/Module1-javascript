@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<canvas id="hcn" width="300px" height="300px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    class Rectangle {
+        constructor(x, y, width, height, color) {
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
+            this.color = color;
+        }
+
+        renderRectangle() {
+            var cxt = document.getElementById("hcn").getContext("2d");
+            cxt.beginPath();
+            cxt.strokeStyle = this.color;
+            cxt.strokeRect(this.x, this.y, this.width, this.height);
+        }
+    }
+
+    var rectangle1 = new Rectangle(10, 10, 200, 100, "#000000");
+    rectangle1.renderRectangle();
+</script>
+</body>
+</html>

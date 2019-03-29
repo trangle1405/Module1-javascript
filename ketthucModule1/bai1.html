@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    function findMindScore(array) {
+        var minScore = array[0];
+        for (var i = 1; i < array.length; i++) {
+            if (minScore > array[i]) {
+                minScore = array[i];
+            }
+        }
+        return minScore
+    }
+
+    var danhsachDiem = [6, 7, 8, 3, 5];
+    alert(findMindScore(danhsachDiem));
+
+</script>
+</body>
+</html>

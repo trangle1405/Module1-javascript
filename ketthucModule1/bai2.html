@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(array, index) {
+        if (index >= 0 && index < array.length) {
+            array.splice(index, 1);
+        }
+        return array;
+    }
+     var mangSo = [2, 5,8,6, 5];
+    var chiSo = 5;
+    alert(tryRemoveFromArray(mangSo, chiSo));
+</script>
+</body>
+</html>
