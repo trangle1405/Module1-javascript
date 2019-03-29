@@ -8,14 +8,19 @@
 <script>
     function isPrime(number) {
         var laSoNguyenTo = true;
-        for (i = 2; i < number; i ++){
-            if (number % i === 0){
+        for (i = 2; i < number; i++) {
+            if (number % i === 0) {
                 laSoNguyenTo = false;
             }
         }
         return laSoNguyenTo;
     }
-     alert(isPrime(4));
+
+    var number1 = parseFloat(prompt("nhap vao so bat ky"));
+    if (isPrime(number1)) {
+        alert("la so nguyen to");
+    } else
+        alert("khong la so nguyen to");
 </script>
 </body>
 </html>

@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Remote TV</title>
+</head>
+
+<body>
+<p id ="onoff">ON</p>
+<img src = "images/tivi.png" height=500 width="700" onclick= "clickImage()">
+<input type ="button" value ="TurnON/OFF" onclick="tivi.turnOnOff()">
+<img src ="images/remote.png" onclick ="clickImage()">
+
+
+<div id = "button" hidden ="hidden">
+    <h1> Chuyển kênh </h1>
+    <input type ="button"  value="1" onclick ="tivi.setChannel(1)">
+    <input type ="button"  value="2" onclick ="tivi.setChannel(2)">
+    <input type ="button"  value="3" onclick ="tivi.setChannel(3)">
+    <input type ="button"  value="4" onclick ="tivi.setChannel(4)">
+    <input type ="button"  value="5" onclick ="tivi.setChannel(5)">
+    <input type ="button"  value="6" onclick ="tivi.setChannel(6)">
+    <input type ="button"  value="7" onclick ="tivi.setChannel(7)">
+    <input type ="button"  value="8" onclick ="tivi.setChannel(8)">
+    <input type ="button"  value="9" onclick ="tivi.setChannel(9)">
+    <input type ="button"  value="10" onclick ="tivi.setChannel(10)">
+    <input type="number" id = "number">
+    <input type="button" value = "Thay đổi" onclick ="tivi.setVolume()">
+
+</div>
+</body>
+<script>
+    class Remote{
+        constructor(code){
+            this.code= code
+        }
+        changeChannel (channe){
+            this.channel = setChannel();
+
+        }
+        changeVolume(volume){
+            this.volume = setVolume ();
+        }
+    }
+    class Tivi{
+        constructor(channel, volume, turnOn){
+            this.channel= channel;
+            this.volume = volume;
+            this.turnOn = false;
+        }
+        getChannel(){
+            return this.channel;
+        }
+        getVolume(){
+            return this.volume;
+        }
+        setChannel(channel){
+            this.channel = channel;
+            alert ("Kênh " + this.channel);
+        }
+        setVolume(volume){
+            this.volume = volume;
+            if(document.getElementById("number").value >100){
+                alert("Vượt quá giá trị cho phép");
+            }
+            else if(document.getElementById("number").value < 0){
+                alert("Giá trị quá thấp cho phép");
+            }
+            else{
+                alert ("Âm lượng là: " + document.getElementById("number").value);
+            }
+        }
+        turnOnOff(){
+            if(this.turnOn){
+                this.turnOn = false;
+                document.getElementById("onoff").innerHTML = "OFF";
+            }
+            else {
+                this.turnOn = true;
+                document.getElementById("onoff").innerHTML = "ON";
+            }
+        }
+    }
+    function clickImage(){
+        document.getElementById("button").hidden = false;
+    }
+    let tivi = new Tivi(7, 50, false);
+</script>
+
+</html>
